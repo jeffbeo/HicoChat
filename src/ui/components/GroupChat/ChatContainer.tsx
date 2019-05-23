@@ -4,14 +4,39 @@ import {ChatArea} from "./ChatArea";
 import {MembersList} from "../MembersList";
 import {ChatHeader} from "../ChatHeader";
 
-export class ChatContainer extends Component {
+type IProps ={
+    onLogout: (s:boolean)=>any
+}
+
+type IState ={
+    selectedUser: any
+}
+
+export class ChatContainer extends Component<IProps,IState> {
+    constructor(props: IProps)
+    {
+        super(props);
+
+        this.state={
+            selectedUser: null,
+
+        }
+    }
     render() {
         return (
                 <div className='chat-container'>
-                    <ChatHeader />
+                    <ChatHeader onHeaderLogout={(status:boolean)=>{
+                       this.props.onLogout(status)
+                    }}/>
+
                     <div className='chat-body'>
-                        <MembersList />
-                        <ChatArea />
+                        <MembersList selectedUser={(user:any)=>{
+                            this.setState({
+                                selectedUser: user
+                            })
+                        }} />
+                        {(this.state.selectedUser)?<ChatArea currentUser={this.state.selectedUser}/> : null}
+
                     </div>
 
                 </div>

@@ -1,38 +1,41 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+type iProp = {
+    currentUser: any
+}
+export class ChatArea extends React.Component<iProp> {
+
+    constructor(props:iProp)
+    {
+        super(props);
+
+        console.log(this.props);
+    }
 
 
-export class ChatArea extends React.Component {
+
+    renderMessage(history:any,userName:string)
+    {
+        return(
+
+            <li key={history.date}>
+                <div className='avatar'></div>
+                <div className='message'>
+                    <h2> {(history.mode)? localStorage.getItem("userName")+" (You)" : userName}</h2>
+                    <h4>{history.date}  {history.mode}</h4>
+                    <p>{history.message}</p>
+                </div>
+            </li>
+        )
+    }
+
     render() {
         return (
             <div className='chat-area-container'>
                 <div className='chat-area'>
                     <ul>
-                        <li>
-                            <div className='avatar'></div>
-                            <div className='message'>
-                                <h2>Jules Winfield</h2>
-                                <h4>12/10/1995 10:30</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aspernatur ducimus, explicabo facere nemo nulla omnis quaerat
-                                    rerum! Asperiores atque, deserunt dolorem id, maiores minus
-                                   neque possimus quibusdam rem tenetur vitae.</p>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className='avatar'></div>
-                            <div className='message'>
-                                <h2>Jules Winfield</h2>
-                                <h4>12/10/1995 10:30</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Aspernatur ducimus, explicabo facere nemo nulla omnis quaerat
-                                    rerum! Asperiores atque, deserunt dolorem id, maiores minus
-                                    neque possimus quibusdam rem tenetur vitae.</p>
-                            </div>
-                        </li>
-
+                        {this.props.currentUser.history.map((history:any)=>this.renderMessage(history,this.props.currentUser.userName))}
                     </ul>
 
                     <div className='send-area'>

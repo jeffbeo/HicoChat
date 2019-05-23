@@ -8,7 +8,7 @@ type AppState =
     }
 
 type IProps ={
-    onLogin: (s:boolean)=>any
+    onLogin: (s:any)=>any
 }
 
 export class Login extends React.Component<IProps,AppState>
@@ -28,12 +28,14 @@ export class Login extends React.Component<IProps,AppState>
 
             <div className='login-container'>
                 <h1>trueChat</h1>
+
                 <input type="text"
                        placeholder='Username'
                        name='username'
                        id='loginText'
                        onChange={e=> this.setLoggedInUsername(e)}
                 />
+
                 <button onClick={e=> {
                     var _this = this;
                     _this.props.onLogin(false);
@@ -45,8 +47,7 @@ export class Login extends React.Component<IProps,AppState>
                         var xhttp = new XMLHttpRequest();
                         xhttp.open("POST", "http://11.100.109.22:8080/api", true);
                         xhttp.setRequestHeader("Content-type", "application/json");
-                        // xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-                        // xhttp.withCredentials = false;
+
                         xhttp.send("{\"username\":\"" + this.state.user_name + "\", \"context\":\"NEWUSER\"}");
 
                         xhttp.onreadystatechange = function () {
@@ -56,17 +57,12 @@ export class Login extends React.Component<IProps,AppState>
 
                                 if (responseText.status == 1)
                                 {
-                                    _this.props.onLogin(true);
+                                    _this.props.onLogin(responseText);
+
                                 }
                             }
                         };
-
-
-
                     }
-
-
-
                 }}>JOIN</button>
             </div>
 

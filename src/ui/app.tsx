@@ -9,6 +9,8 @@ interface IAppState {
 
 }
 
+
+
 export class App extends React.Component<{},IAppState>
 {
     public static init(element: HTMLElement)
@@ -29,17 +31,33 @@ export class App extends React.Component<{},IAppState>
 
     render()
     {
-        if(this.state.loggedIn)
+        let userName = localStorage.getItem("userName");
+        console.log("localstorage="+userName);
+        if(userName)
         {
-            return(<div><ChatContainer /></div>)
+            return(<div>
+                <ChatContainer onLogout={(logout:any)=>{
+                    localStorage.removeItem("userName");
+                    this.setState({
+                        loggedIn:false
+                    })
+
+                }}/>
+            </div>)
+
         }
         else
         {
             return(<div>
-                <Login onLogin={(loggedIn:boolean)=>{
+                <Login onLogin={(user:any)=>{
+                    console.log("logged in "+user);
+                    localStorage.setItem("userName", user.userName);
+                    localStorage.setItem("userToken", user.token);
+
                     this.setState({
-                        loggedIn:loggedIn
+                        loggedIn:true
                     })
+
                  }} />
             </div>)
         }
