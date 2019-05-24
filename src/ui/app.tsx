@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from 'react-dom';
-import {Login} from "./components/Login";
+import {Login} from "./components/Login/Login";
 import {ChatContainer} from "./components/GroupChat/ChatContainer";
 
 
@@ -8,8 +8,6 @@ interface IAppState {
     loggedIn:boolean
 
 }
-
-
 
 export class App extends React.Component<{},IAppState>
 {
@@ -51,9 +49,6 @@ export class App extends React.Component<{},IAppState>
             return(<div>
                 <Login onLogin={(user:any)=>{
                     console.log("logged in "+user);
-                    localStorage.setItem("userName", user.userName);
-                    localStorage.setItem("userToken", user.token);
-
                     this.setState({
                         loggedIn:true
                     })

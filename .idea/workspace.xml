@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f56bd9-b2eb-4cfe-a3e4-7f04096b6a1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ui/components/Login/login_service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/components/NotifyPop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style/notify_pop.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/ChatHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/ChatHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/Login/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/components/MembersList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/components/MembersList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/members.less" beforeDir="false" afterPath="$PROJECT_DIR$/style/members.less" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/app.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            <state relative-caret-position="792">
+              <caret line="36" column="39" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="39" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -35,37 +38,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/components/Login.tsx">
+        <entry file="file://$PROJECT_DIR$/src/ui/components/Login/Login.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            <state relative-caret-position="396">
+              <caret line="51" column="63" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="63" />
+              <folding>
+                <element signature="e#1#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/login.less">
+        <entry file="file://$PROJECT_DIR$/src/ui/components/Login/login_service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="616">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/chat_area.less">
+        <entry file="file://$PROJECT_DIR$/src/ui/components/NotifyPop.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+            <state relative-caret-position="332">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -76,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="61" column="13" selection-start-line="57" selection-start-column="12" selection-end-line="61" selection-end-column="13" />
+            <state relative-caret-position="332">
+              <caret line="52" column="29" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="52" selection-end-column="29" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -88,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/MembersList.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1540">
-              <caret line="78" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="533">
+              <caret line="114" column="53" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="53" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -98,24 +107,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/members.less">
+        <entry file="file://$PROJECT_DIR$/style/notify_pop.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state>
+              <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tsconfig.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/components/ChatHeader.tsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="27" column="47" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="47" />
+            <state relative-caret-position="418">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -130,6 +143,8 @@
       <find>chat-area-container</find>
       <find>onLogin</find>
       <find>userData</find>
+      <find>_this</find>
+      <find>selectedUser</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,34 +161,31 @@
         <option value="$PROJECT_DIR$/src/ui/components/GroupChat/GroupChatLayout.tsx" />
         <option value="$PROJECT_DIR$/style/header.less" />
         <option value="$PROJECT_DIR$/style/index.less" />
-        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/style/group_chat.less" />
         <option value="$PROJECT_DIR$/style/layout.less" />
         <option value="$PROJECT_DIR$/style/chat_area.less" />
         <option value="$PROJECT_DIR$/style/login.less" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/style/members.less" />
+        <option value="$PROJECT_DIR$/src/ui/components/notification.tsx" />
+        <option value="$PROJECT_DIR$/style/notify_pop.tsx" />
+        <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/ui/components/ChatHeader.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/components/NotifyPop.tsx" />
+        <option value="$PROJECT_DIR$/style/notify_pop.less" />
+        <option value="$PROJECT_DIR$/src/ui/components/Login.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/components/Login/service.ts" />
         <option value="$PROJECT_DIR$/src/ui/app.tsx" />
-        <option value="$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/components/Login/Login.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/components/Login/login_service.ts" />
         <option value="$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx" />
         <option value="$PROJECT_DIR$/src/ui/components/MembersList.tsx" />
-        <option value="$PROJECT_DIR$/style/members.less" />
-        <option value="$PROJECT_DIR$/src/ui/components/Login.tsx" />
+        <option value="$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/HicoChat.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -185,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,18 +228,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="GroupChat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HicoChat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HicoChat" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
+              <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,14 +246,16 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="ts.external.directory.path" value="D:\git\HicoChat\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\HicoChat\src\ui\components\Login" />
+      <recent name="D:\git\HicoChat\src\ui\components\GroupChat" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\git\HicoChat\src\ui\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\git\HicoChat\src\ui\components\GroupChat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,15 +282,16 @@
       <updated>1558419288477</updated>
       <workItem from="1558419289604" duration="21735000" />
       <workItem from="1558497139975" duration="22591000" />
-      <workItem from="1558598245803" duration="618000" />
+      <workItem from="1558598245803" duration="7356000" />
+      <workItem from="1558670009069" duration="14407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44944000" />
+    <option name="totallyTimeSpent" value="66089000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -289,7 +299,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25349087" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.25725028" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32998884" />
@@ -320,10 +330,10 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24973147" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.25725028" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="TypeScript" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
@@ -362,16 +372,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/style/index.less" />
     <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/GroupChatInput.tsx" />
-    <entry file="file://$PROJECT_DIR$/src/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -390,13 +390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -431,36 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="61" column="13" selection-start-line="57" selection-start-column="12" selection-end-line="61" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/MembersList.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1540">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/members.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -471,29 +434,100 @@
     <entry file="file://$PROJECT_DIR$/tsconfig.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/notify_pop.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/components/ChatHeader.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="47" />
+        <state relative-caret-position="418">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/components/Login.tsx">
+    <entry file="file://$PROJECT_DIR$/src/ui/app.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="792">
+          <caret line="36" column="39" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/app.tsx">
+    <entry file="file://$PROJECT_DIR$/src/ui/components/Login/login_service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+        <state relative-caret-position="616">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/NotifyPop.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/Login/Login.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="51" column="63" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="63" />
+          <folding>
+            <element signature="e#1#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatArea.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="52" column="29" lean-forward="true" selection-start-line="49" selection-start-column="40" selection-end-line="52" selection-end-column="29" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/MembersList.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="114" column="53" selection-start-line="114" selection-start-column="45" selection-end-line="114" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/components/GroupChat/ChatContainer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

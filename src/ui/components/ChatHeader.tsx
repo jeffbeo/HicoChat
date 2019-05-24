@@ -13,7 +13,7 @@ export class ChatHeader extends React.Component<IProps> {
    render() {
         return (
             <div className='chat-header'>
-                <h2>trueChat</h2>
+                <h2>hiChat</h2>
                 <button onClick={e=>{
                     this.props.onHeaderLogout(false);
                 }} title='Logout'>

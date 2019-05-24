@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import {NotifyPop} from "./NotifyPop";
 
 type iProps={
     selectedUser: (s:any)=>any
@@ -11,7 +12,7 @@ export class MembersList extends React.Component<iProps> {
             {
                 userId: 3,
                 userName: "nikil",
-                token: "99ff738379098d62517575165c2a9626",
+                token: "99ff738379098d62517575165c2nikhil",
                 lastActivity: "2019-05-22 12:18:39",
                 history:[
                     {
@@ -29,7 +30,7 @@ export class MembersList extends React.Component<iProps> {
         {
                 userId: 1,
                 userName: "jeff",
-                token: "bd2bbd8768c2c570da4bedc2e5f2f59b",
+                token: "bd2bbd8768c2c570da4bedc2e5f2jeff",
                 lastActivity: "2019-05-22 12:38:52",
                 history:[
                     {
@@ -80,6 +81,9 @@ export class MembersList extends React.Component<iProps> {
                 <ul>
                     {this.userData.users.map((u:any)=>this.load_members(u))}
                 </ul>
+
+                <NotifyPop message={'New Message Popup.New Message Popup.New Message Popup.New Message ' +
+                'Popup New Message Popup New Message Popup New Message Popup'} statusChange={1}/>
             </div>
         )
     }
@@ -107,6 +111,7 @@ export class MembersList extends React.Component<iProps> {
             if(u.userId == user_id)
             {
                 this.props.selectedUser(u);
+                localStorage.setItem("selectedUser",u);
                 console.log("History for "+u.userName)
             }
         })}
