@@ -13,6 +13,7 @@ export class ChatHeader extends React.Component<IProps> {
    render() {
         return (
             <div className='chat-header'>
+                <i className="fas fa-bars mainMenuButton"></i>
                 <h2>hiChat</h2>
                 <button onClick={e=>{
                     this.props.onHeaderLogout(false);

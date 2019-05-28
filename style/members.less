@@ -2,8 +2,8 @@
 .mem-list-container {
   width: 20%;
   height:100%;
-  padding: 14px;
-  background-color: #131212eb;
+  background-color: #FFF;
+  border-right:1px solid lightgray;
 
   ul {
     padding: 0;
@@ -17,8 +17,9 @@
     display: flex;
     align-items: center;
     padding:15px;
-    border-bottom: 0.5px solid #6d6d6d;
+    border-bottom: 0.5px solid lightgray;
     cursor:pointer;
+
 
     .thumb {
       min-width: 48px;
@@ -26,60 +27,101 @@
       text-align: center;
       line-height: 48px;
       border-radius: 50%;
-      background-color: #27ae60;
+      background-color: #FFF;
+      border:1px solid gray;
+      box-shadow: 3px 3px 3px grey;
 
       span {
-        color: #ffffff;
+        color: #000;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: normal;
       }
 
+    }
+
+    .unRead
+    {
+      position:absolute;background:dodgerblue;
+      font-size:12px; color:#FFF;
+      border-radius:50%;
+      margin: 15px 0 0 30px;
+      display: flex;
+      width: 25px;
+      height: 25px;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+
+      span{padding:5px;}
     }
 
     .details {
       padding-left: 16px;
       padding-top: 6px;
-      color: #ffffff;
+      color: #000; width:80%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
 
-      h2 {
-        margin-bottom: 4px;
-        font-size: 16px;
-        font-weight: normal;
+      .userInfo
+      {
+        display:flex;
+        flex-direction: column;
+        width: 90%;
+
+        h2 {
+          margin-bottom: 4px;
+          font-size: 16px;
+          font-weight: bold;
+        }
+
+        h3 {
+          font-size: 10px;
+        }
       }
 
-      h3 {
-        font-size: 10px;
-      }
+
+
+      .favourites{font-size: 20px;}
+      .selectedAsFavourite{color:orange;}
 
     }
+
+    &:hover{background: #e6e6e6a8;}
+
+
   }
 
-  li:last-child {
-    border-bottom: 0;
-  }
+  .selectedChat{background: #e6e6e6a8;}
+
+
+
+  //li:last-child {
+  //  border-bottom: 0;
+  //}
 
 }
 
 @media only screen and (max-width: 600px) {
-  .mem-list-container ul li .details{display:none;}
+  .mem-list-container {display:none;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .mem-list-container ul li .details{display:none;}
+  .mem-list-container {display:none;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .mem-list-container ul li .details{display:block;}
+  .mem-list-container {display:block;}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .mem-list-container ul li .details{display:block;}
+  .mem-list-container {display:block;}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .mem-list-container ul li .details{display:block;}
+  .mem-list-container {display:block;}
 }

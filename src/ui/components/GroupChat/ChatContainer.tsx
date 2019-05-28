@@ -36,31 +36,30 @@ export class ChatContainer extends Component<IProps,IState> {
             let stringified_message:string = JSON.stringify(message);
 
             this.send(stringified_message);
-            alert("Message is sent...");
+            //alert("Message is sent...");
         };
-
-
-
 
         this.ws.onmessage = function (evt)
         {
             let received_msg = evt.data;
-            alert("Message is received..."+received_msg);
+            //alert("Message is received..."+received_msg);
             console.log(received_msg);
+
+
         };
 
         this.ws.onclose = function()
         {
-            alert("Connection is closed...");
+            //alert("Connection is closed...");
         };
 
         this.ws.onerror = function()
         {
-            alert("Connection error...");
+            //alert("Connection error...");
         };
+
+
     }
-
-
 
     render() {
         return (
@@ -96,7 +95,6 @@ export class ChatContainer extends Component<IProps,IState> {
                     "token": localStorage.getItem("userToken"),
                     "toToken": selectedUserToken,
                     "context": "ONMESSAGE"
-
                 };
                 let stringified_message:string = JSON.stringify(message);
                 if(this.ws)
@@ -104,39 +102,6 @@ export class ChatContainer extends Component<IProps,IState> {
                     this.ws.send(stringified_message);
 
                 }
-
-
-
-            //let ws = new WebSocket("ws://11.100.109.22:8080/wschat");
-
-            // ws.onopen = function()
-            // {
-            //     let message =
-            //         {
-            //             "message": msg,
-            //             "token": localStorage.getItem("userToken"),
-            //             "toToken": selectedUserToken,
-            //             "context": "ONMESSAGE"
-            //
-            //         };
-            //     let stringified_message:string = JSON.stringify(message);
-            //     ws.send(stringified_message);
-            //     alert("Message is sent...");
-            // };
-            //
-            // ws.onmessage = function (evt)
-            // {
-            //     let received_msg = evt.data;
-            //     alert("Message is received..."+received_msg);
-            //     console.log(received_msg);
-            //
-            //
-            // };
-            //
-            // ws.onclose = function()
-            // {
-            //     alert("Connection is closed...");
-            // };
         }
         else
         {

@@ -24,7 +24,7 @@ export class Login extends React.Component<IProps,AppState>
     render() {
         return(
             <div className='login-container'>
-                <h1>trueChat</h1>
+                <h1>hiChat</h1>
 
                 <input type="text"
                        placeholder='Username'

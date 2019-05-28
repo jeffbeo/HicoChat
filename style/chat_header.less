@@ -1,26 +1,36 @@
 .chat-header {
-  padding: 16px 32px;
+  padding:10px 0 10px 0;
   background-color: #101010;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  .mainMenuButton
+  {
+    color:#FFF; margin-left:10px;
+    cursor: pointer;
+  }
 
   h2 {
     margin: 0;
     font-size: 32px;
     color: #fff;
     font-family: Pristina;
+    width:90%;
+    padding-left: 20px;
 
   }
 
   button {
-    width: 45px;
-    height: 45px;
-    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
     color: white;
     border: 0;
     border-radius: 50%;
     background-color: #c0392b;
     cursor: pointer;
+    margin-right: 20px;
 
   }
 
@@ -32,4 +42,33 @@
     outline: 0;
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+  .mainMenuButton{display:block;}
+  .chat-header h2{text-align:center;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mainMenuButton{display:block;}
+  .chat-header h2{text-align:center;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mainMenuButton{display:none;}
+  .chat-header h2{text-align:left;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mainMenuButton{display:block;}
+  .chat-header h2{text-align:left;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mainMenuButton{display:none;}
+  .chat-header h2{text-align:left;}
 }

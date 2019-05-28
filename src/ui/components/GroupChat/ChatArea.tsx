@@ -24,11 +24,23 @@ export class ChatArea extends React.Component<iProp,iState> {
     {
         return(
             <li key={history.date}>
-                <div className='avatar'></div>
-                <div className='message'>
-                    <h2> {(history.mode)? localStorage.getItem("userName")+" (You)" : userName}</h2>
-                    <h4>{history.date}  {history.mode}</h4>
-                    <p>{history.message}</p>
+                <div className='messageWrapper'>
+                    <div className='messageHeader'>
+                        <div className='avatar'>
+                            <img src={history.userImage} alt={history.userImage}/>
+                        </div>
+                        <div className='messageUser'>
+                            <h2>{(history.mode)? localStorage.getItem("userName")+" (You)" : userName}</h2>
+                            <h4>{history.date}  {history.mode}</h4>
+                        </div>
+                        <div className='messageOptions'>
+                            <i className="attachment fas fa-paperclip" title='Attachment'></i>
+                            <i className="fas fa-ellipsis-h" title='Options'></i>
+                        </div>
+                    </div>
+                    <div className='messageContents'>
+                        <p>{history.message}</p>
+                    </div>
                 </div>
             </li>
         )
